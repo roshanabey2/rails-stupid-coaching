@@ -1,0 +1,17 @@
+<h1 class="mb-5 ms-3"> Stupid Coaching </h1>
+<ul  class="list-group list-group-flush list-unstyled ms-3 mb-5 w-75">
+<li class= "border-0 border-start border-5 list-group-item " style="border-color: grey; padding-left: 10px;">
+  <% if @question.blank? %>
+      😶
+<p><%= @question %></p>
+<% end %>
+<p> <i> -You </i> </p>
+</li>
+
+<li class=" border-0 border-start border-5 list-group-item-warning mt-5" style="border-color: grey; padding-left: 10px;" >
+<p> <strong> <%= @coach_answer%> </strong> </p>
+<p><i>-Your Coach </i> </p>
+</li>
+</ul>
+
+<a class="mt-5 ms-3" href=/ask> Ask a new question </a>
